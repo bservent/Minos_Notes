@@ -43,4 +43,42 @@ df.astype // change data types in columns
 //index = row names of table
 //retrieve = df.index
 //set column as index = df.set_index('Name', inplace = True)
+//use bracket notation to select columns df[list_of_columns]
+//you can also slice one column from data frame df[column_name]
+//bracket notation only works for columns
+//df[[0]] = error because there are no columns at named 0
+
+//LOCS
+//use loc = df.loc[list_of_rows, list_of_columns]
+//you can specify amounts with locs or you can us a colon to specify all - see ex photo
+//Output types change when combinations of row/columns names or just names
+//List + list = data frame
+//List + name = Series
+//Name + name = Value
+//ex: see photo
+//slicing with loc looks like this: df.loc[0:1, 'Name': 'Age']
+//returns everything btw the two ends of the slice
+
+//ILOC
+//has same output values (data frame, series, value) as loc and colon also indicates all rows/columns
+//ex: df.iloc[list_of_row_positions, list_of_column_positions]
+//slicing with iloc is different as first index is inclusive where the second index is exclusive.
+//ex: see photo
+
+//Drop column = df.drop('Age', axis = 1)
+//Add column = df['Year of Birth'] = 2019 - df['Age']
+//Filtering = use bracket notation to fileter rows based on condition
+//df[logical_conditions]
+//logical operators & | ~
+//multiple conditions = use parathesis
+//ex: df['Name'] == 'Marta') & ~ (df['Age'] == 18)]
+
+//NaN VALUES
+//NaN = not a number = values we do not know
+//we can drop rows with Nan values but there are statistical consequences
+//ex: df.dropna()
+//we can also replace NaN with a specific value
+//ex: df.fillna(value_of_choice_replaces_NaN)
+
+
 
