@@ -35,4 +35,19 @@
 
 //JOINS
 
+//Inner Join
+//ex: SELECT column_name(s), FROM table1, INNER JOIN table2, ON table1.column_name= table2.column_name;
+//must have some matching data to join 
+//ex: prices = table1, quantities = tanble2, products = commonality
+
+//OUTER JOIN (FULL JOIN)
+//ex: prices.product, price, quantities.product, quantity
+
+//LEFT JOIN
+//all the left or Table1 entries and the corresponding entries from Table2 that match on a selected attribute
+//if no corresponding entry in right table2 then NULL is used
+
+//RIGHT JOIN
+//same as left on opposite side
+
 
